@@ -7,34 +7,11 @@
 <meta name="googlebot" content="noindex, nofollow, noarchive, noimageindex">
 <title>Mushroom Field Study, Solan</title>
 <link rel="stylesheet" href="style.css">
-<style>
-#private-toast{
-  position:fixed;
-  left:50%;
-  bottom:1.5rem;
-  transform:translateX(-50%) translateY(1rem);
-  background:#1f2933;
-  color:#fff;
-  padding:.7rem 1.15rem;
-  border-radius:6px;
-  font-size:.95rem;
-  box-shadow:0 4px 16px rgba(0,0,0,.2);
-  opacity:0;
-  pointer-events:none;
-  transition:opacity .2s ease,transform .2s ease;
-  z-index:1000;
-  max-width:calc(100% - 2rem);
-}
-#private-toast.is-visible{
-  opacity:1;
-  transform:translateX(-50%) translateY(0);
-}
-</style>
 </head>
 <body>
 <nav>
   <a href="index.html" aria-current="page">Home</a>
-  <a href="field-trip.html">Field-trip plan</a>
+  <a href="404.html">Field-trip plan</a>
   <a href="benchmark-study.html">Benchmark study</a>
   <a href="https://github.com/anandvip/mushroom-haryana">Kurukshetra study on GitHub</a>
 </nav>
@@ -44,7 +21,7 @@
   <p class="lede">A field visit to Solan, Himachal Pradesh, to meet institutes and real mushroom growers and bring back a baseline that can be compared with Kurukshetra — especially Thanesar and Pehowa.</p>
   <p>This site is part of Vipul Anand’s <a href="https://github.com/anandvip/mushroom-haryana">Kurukshetra / Haryana mushroom diversification study</a>, which looks at stepping off the wheat–paddy cycle toward a wider mix of crops.</p>
   <p>
-    <a class="cta" href="field-trip.html">Read the field-trip plan</a>
+    <a class="cta" href="404.html">Read the field-trip plan</a>
     <a class="cta cta-secondary" href="benchmark-study.html">Benchmark study</a>
     <a class="cta cta-secondary" href="https://github.com/anandvip/mushroom-haryana">Main study on GitHub</a>
   </p>
@@ -61,11 +38,11 @@
   </article>
   <article class="card">
     <h2>What is here now</h2>
-    <p>The <a href="field-trip.html">field-trip plan</a> is private for now.</p>
+    <p>The <a href="404.html">field-trip plan</a> is private for now.</p>
   </article>
 </section>
 
-<p class="note"><strong>On this site now:</strong> the landing page, the <a href="field-trip.html">field-trip plan</a>, and the <a href="benchmark-study.html">Haryana mushroom farming benchmark study</a>.</p>
+<p class="note"><strong>On this site now:</strong> the landing page, the <a href="404.html">field-trip plan</a>, and the <a href="benchmark-study.html">Haryana mushroom farming benchmark study</a>.</p>
 
 <blockquote>
   <p>A study conducted by Vipul Anand using Grok chief of staff and research team lead. Special thanks to engineering team for publishing it to make it available for those interested in diversifying from mono culture in haryana from wheat and paddy cycles and looking forward to adapting variety of crops in the future timelines.</p>
@@ -74,25 +51,5 @@
 <footer class="site-footer">
   <p>Reuse, republication or AI training needs prior written permission from Vipul Anand. See <a href="https://github.com/anandvip/mushroom-field-study-solan/blob/vipul/LICENSE">LICENSE</a>.</p>
 </footer>
-<div id="private-toast" role="status" aria-live="assertive" aria-atomic="true"></div>
-<script>
-(function () {
-  var toast = document.getElementById('private-toast');
-  var hideTimer;
-  function showPrivateToast(e) {
-    if (e) e.preventDefault();
-    toast.textContent = 'Private data — access denied';
-    toast.classList.add('is-visible');
-    clearTimeout(hideTimer);
-    hideTimer = setTimeout(function () {
-      toast.classList.remove('is-visible');
-    }, 3000);
-  }
-  var links = document.querySelectorAll('a[href="field-trip.html"]');
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', showPrivateToast);
-  }
-})();
-</script>
 </body>
 </html>
